@@ -9,21 +9,19 @@ body{
     background-repeat: no-repeat;
     background-position: center center
 }
-header{
+header, footer{
     background-color: rgb(17, 75, 17);
+}
+header{
     border-bottom: 5px solid black;
 }
 h1{
     font-family: "Ranchers", sans-serif;
 }
-h2{
-    font-family: "Roboto", sans-serif;
-}
-p{
+h2, p{
     font-family: "Roboto", sans-serif;
 }
 footer{
-    background-color: rgb(17, 75, 17);
     border-top: 5px solid black;
 }
 .App{
@@ -48,4 +46,5 @@ footer{
     margin: 10em;
     width: auto;
     height: 225px;
+    border: 2px solid black;
 }
