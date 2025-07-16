@@ -19,7 +19,6 @@ function App() {
       <div className="App">
         <BrowserRouter>
           <Header />
-          <main>
             <Routes>
               <Route path="/" element={<Navigate to="/welcome" />} />
               <Route path="/welcome" element={<WelcomePage />} />
@@ -33,7 +32,6 @@ function App() {
               <Route path="/profile" element={<UserProfile />} />
               <Route path="/about" element={<About />} />
             </Routes>
-            </main>
           <Footer />
         </BrowserRouter>
       </div>

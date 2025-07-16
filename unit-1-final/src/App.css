@@ -13,11 +13,14 @@ header{
     background-color: rgb(17, 75, 17);
     border-bottom: 5px solid black;
 }
-main{
-    
-}
 h1{
     font-family: "Ranchers", sans-serif;
+}
+h2{
+    font-family: "Roboto", sans-serif;
+}
+p{
+    font-family: "Roboto", sans-serif;
 }
 footer{
     background-color: rgb(17, 75, 17);
@@ -37,10 +40,12 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     padding: 1em;
+    font-family: "Roboto", sans-serif;
 }
-
-.ranchers-regular {
-  font-family: "Ranchers", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.Welcome, .About{
+    background-color: gray;
+    padding: 1em;
+    margin: 10em;
+    width: auto;
+    height: 225px;
 }
