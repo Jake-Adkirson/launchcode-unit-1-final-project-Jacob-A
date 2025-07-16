@@ -1,3 +1,11 @@
 .App{
-  text-align: center;
+    text-align: center;
+}
+.NavBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
 }

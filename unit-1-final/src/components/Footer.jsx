@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-dom'
+import NavBar from './NavBar'
 
-//TODO make all Ps into links to associated page
 
 const Footer = () => {
     return(
-        <footer>
-            
+        <footer className="FooterNav">
+            <NavBar />
         </footer>
     )
 }
