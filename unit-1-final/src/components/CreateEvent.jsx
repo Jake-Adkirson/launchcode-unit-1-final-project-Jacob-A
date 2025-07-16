@@ -20,11 +20,7 @@ const CreateEvent = () => {
             <form>
                 <label>
                     Event Name: <input type="text" name="eventName" value={formData.eventName} onChange={handleChange} />
-                </label>
-                <label>
                     Location: <input type="text" name="location" value={formData.location} onChange={handleChange} />
-                </label>
-                <label>
                     Date: <input type="text" name="date" value={formData.date} onChange={handleChange} />
                 </label>
                 <button>Submit</button>

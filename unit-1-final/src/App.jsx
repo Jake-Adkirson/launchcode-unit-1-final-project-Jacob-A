@@ -8,6 +8,7 @@ import UserProfile from './components/UserProfile';
 import About from './components/About';
 import CreateEvent from './components/CreateEvent';
 import JoinEvent from './components/JoinEvent';
+import SignIn from './components/SignIn';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Navigate to="/welcome" />} />
               <Route path="/welcome" element={<WelcomePage />} />
+                <Route path="/welcome/sign_in" element={<SignIn />} />
               <Route path="/events_page" element={<EventsPage />} />
                 <Route path="/events_page/create_event" element={<CreateEvent />} />
                 <Route path="/events_page/join_event" element={<JoinEvent />} />

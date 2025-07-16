@@ -21,8 +21,6 @@ const JoinEvent = () => {
             <form>
                 <label>
                     Name: <input type="text" name="name" value={formData.name} onChange={handleChange} />
-                </label>
-                <label>
                     Age:
                     <select name="age" value={formData.age} onChange={handleChange}>
                         <option disabled value="">Choose Age...</option>
@@ -30,8 +28,6 @@ const JoinEvent = () => {
                         <option value="youth">8 - 12yrs</option>
                         <option value="adult">13+yrs</option>
                     </select>
-                </label>
-                <label>
                     Watercraft:
                     <select name="watercraft" value={formData.watercraft} onChange={handleChange}>
                         <option disabled value="">Choose Watercraft...</option>
@@ -39,8 +35,6 @@ const JoinEvent = () => {
                         <option value="kayak">Kayak</option>
                         <option value="canoe">Canoe</option>
                     </select>
-                </label>
-                <label>
                     Camping and/or Floating: 
                     <select name="camping" value={formData.camping} onChange={handleChange}>
                         <option disabled value="">Choose Selection...</option>
