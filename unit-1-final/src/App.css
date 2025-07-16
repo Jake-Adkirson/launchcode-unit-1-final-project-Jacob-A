@@ -1,9 +1,34 @@
-.App{
-    text-align: center;
-    background-image: url("");
+html, body{
+    background-color: rgb(133, 133, 133);
+    margin: 0;
+    height: 100%;
+}
+body{
+    background-image: url("https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center
+}
+header{
+    background-color: rgb(17, 75, 17);
+    border-bottom: 5px solid black;
+}
+main{
+    
+}
+h1{
+    font-family: "Ranchers", sans-serif;
+}
+footer{
+    background-color: rgb(17, 75, 17);
+    border-top: 5px solid black;
+}
+.App{
+    text-align: center;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
 }
 .NavBar{
     display: flex;
@@ -12,4 +37,10 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 1em;
+}
+
+.ranchers-regular {
+  font-family: "Ranchers", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
