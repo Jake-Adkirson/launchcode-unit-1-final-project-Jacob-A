@@ -28,6 +28,7 @@ function App() {
                 <Route path="/events_page/create_event" element={<CreateEvent />} />
                 <Route path="/events_page/current_events" element={<CurrentEvents />} />
               <Route path="/trip_page" element={<TripPage />} />
+              <Route path="/join_event" element={<JoinEvent />} />
               <Route path="/profile" element={<UserProfile />} />
               <Route path="/about" element={<About />} />
             </Routes>

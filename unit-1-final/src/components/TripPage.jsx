@@ -6,6 +6,9 @@ const TripPage = () => {
             <h2>Event Details</h2>
             <p>Event Name: Super Float Event Organizer: Jake A. Event Date: 8/15/25 - 8/17/25 Event Location: Bass River Resort</p>
             <h2>Attendees</h2>
+            <button>
+                <Link to="/join_event">Join Event</Link>
+            </button>
             <p>Name: Jake A. Age: 13+yrs Watercraft: Kayak Floating and/or Camping: Floating and Camping</p>
             <p>Name: Brittany A. Age: 13+yrs Watercraft: Kayak Floating and/or Camping: Floating and Camping</p>
             <p>Name: Jon H. Age: 13+yrs Watercraft: Raft Floating and/or Camping: Floating and Camping</p>
