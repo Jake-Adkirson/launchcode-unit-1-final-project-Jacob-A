@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 //TODO make all Ps into links to associated page
 
@@ -9,7 +9,7 @@ const NavBar = () => {
             <Link to="/welcome">Home</Link>
         </button>
         <button>
-            <Link to="/eventspage">Events</Link>
+            <Link to="/events_page">Events</Link>
         </button>
         <button>
             <Link to="/profile">Profile</Link>
