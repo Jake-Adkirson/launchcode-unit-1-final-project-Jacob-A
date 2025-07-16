@@ -31,7 +31,7 @@ const CreateEvent = () => {
                 <button>Clear</button>
             </form>
         </div>
-    )
+    );
 }
 
 export default CreateEvent;
