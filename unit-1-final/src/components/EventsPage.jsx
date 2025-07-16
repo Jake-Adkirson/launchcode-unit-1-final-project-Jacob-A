@@ -8,7 +8,7 @@ const EventsPage = () => {
                 <Link to="/events_page/create_event">Create Event</Link>
             </button>
             <button>
-               <Link to="/events_page/join_event">Current Events</Link>
+               <Link to="/events_page/current_events">Current Events</Link>
             </button>
         </div>
     );
