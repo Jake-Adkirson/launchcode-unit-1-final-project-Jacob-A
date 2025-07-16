@@ -11,6 +11,7 @@ import JoinEvent from './components/JoinEvent';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import CurrentEvents from './components/CurrentEvents';
+import TripPage from './components/TripPage';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
               <Route path="/events_page" element={<EventsPage />} />
                 <Route path="/events_page/create_event" element={<CreateEvent />} />
                 <Route path="/events_page/current_events" element={<CurrentEvents />} />
+              <Route path="/trip_page" element={<TripPage />} />
               <Route path="/profile" element={<UserProfile />} />
               <Route path="/about" element={<About />} />
             </Routes>
