@@ -39,7 +39,7 @@ footer{
     padding: 1em;
     font-family: "Roboto", sans-serif;
 }
-.Welcome, .About, .TripPage, .Profile, .CurrentEvents, .EventsPage{
+.Welcome, .About, .TripPage, .Profile, .CurrentEvents, .EventsPage, .MakeEvntFrm, .SignIn, .SignUp{
     background-color: gray;
     padding: 1em;
     margin: 10em;

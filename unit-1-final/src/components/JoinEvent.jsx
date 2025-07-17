@@ -43,6 +43,7 @@ const JoinEvent = () => {
                         <option value="both">Camping and Floating</option>
                     </select>
                 </label>
+                <br/>
                 <button>Submit</button>
                 <button>Clear</button>
             </form>

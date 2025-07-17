@@ -23,6 +23,7 @@ const CreateEvent = () => {
                     Location: <input type="text" name="location" value={formData.location} onChange={handleChange} />
                     Date: <input type="text" name="date" value={formData.date} onChange={handleChange} />
                 </label>
+                <br/>
                 <button>Submit</button>
                 <button>Clear</button>
             </form>

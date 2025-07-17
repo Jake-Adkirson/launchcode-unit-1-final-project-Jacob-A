@@ -1,6 +1,6 @@
 const SignUp = () => {
     return(
-        <div>
+        <div className="SignUp">
             <h2>Sign Up</h2>
             <label>
                 Name: <input type="text" name="email" />
@@ -8,6 +8,7 @@ const SignUp = () => {
                 Password: <input type="text" name="password" />
                 Confirm Password: <input type="text" name="conpass" />
             </label>
+            <br/>
             <button>Sign Up</button>
         </div>
     );
