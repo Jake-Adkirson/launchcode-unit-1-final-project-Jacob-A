@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 
 const TripPage = () => {
     return(
-        <div>
+        <div className="TripPage">
             <h2>Event Details</h2>
             <p>Event Name: Super Float Event Organizer: Jake A. Event Date: 8/15/25 - 8/17/25 Event Location: Bass River Resort</p>
             <h2>Attendees</h2>

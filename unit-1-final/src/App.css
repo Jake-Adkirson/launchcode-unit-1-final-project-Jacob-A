@@ -1,13 +1,12 @@
 html, body{
     background-color: rgb(133, 133, 133);
     margin: 0;
-    height: 100%;
 }
 body{
     background-image: url("https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center
+    background-position: center;
 }
 header, footer{
     background-color: rgb(17, 75, 17);
@@ -40,11 +39,11 @@ footer{
     padding: 1em;
     font-family: "Roboto", sans-serif;
 }
-.Welcome, .About{
+.Welcome, .About, .TripPage, .Profile, .CurrentEvents, .EventsPage{
     background-color: gray;
     padding: 1em;
     margin: 10em;
     width: auto;
-    height: 225px;
+    height: fit-content;
     border: 2px solid black;
 }
