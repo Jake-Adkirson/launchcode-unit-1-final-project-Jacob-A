@@ -9,9 +9,7 @@ const EventsPage = () => {
                 <Link to="/events_page/create_event">Create Event</Link>
             </button>
             <br/>
-            <button>
-               <Link to="/events_page/current_events">Current Events</Link>
-            </button>
+            <p>Event Name: <Link to="/trip_page">Super Float Event</Link> Organizer: Jake A. Event Date: 8/15/25 - 8/17/25 Event Location: Bass River Resort</p>
         </div>
     );
 }

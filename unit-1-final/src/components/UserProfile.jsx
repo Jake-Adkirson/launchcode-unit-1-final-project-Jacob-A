@@ -1,12 +1,17 @@
 
 const UserProfile = () => {
+    const localName = localStorage.getItem('name');
+    const localAge = localStorage.getItem('age');
+    const localState = localStorage.getItem('state');
+    const localPrefWatercraft = localStorage.getItem('prefWatercraft');
+
     return(
         <div className="Profile">
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541" />
-        <p>Name:</p>
-        <p>Age:</p>
-        <p>State:</p>
-        <p>Preferred Watercraft:</p>
+        <p>Name: {localName}</p>
+        <p>Age: {localAge}</p>
+        <p>State: {localState}</p>
+        <p>Preferred Watercraft: {localPrefWatercraft}</p>
         </div>
     );
 }

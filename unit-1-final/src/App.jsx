@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {BrowserRouter, Route, Routes, Navigate } from 'react-router';
 import './App.css';
 import Header from './components/Header';
@@ -9,21 +8,20 @@ import UserProfile from './components/UserProfile';
 import About from './components/About';
 import CreateEvent from './components/CreateEvent';
 import JoinEvent from './components/JoinEvent';
-import SignUp from './components/SignUp';
 import CurrentEvents from './components/CurrentEvents';
 import TripPage from './components/TripPage';
+import SignInSignUp from './components/SignInSignUp';
 
 function App() {
-
 
   return (
       <div className="App">
         <BrowserRouter>
           <Header />
             <Routes>
-              <Route path="/" element={<Navigate to="/welcome" />} />
+              <Route path="/" element={<Navigate to="/sign_in_sign_up" />} />
+              <Route path="/sign_in_sign_up" element={<SignInSignUp />} />
               <Route path="/welcome" element={<WelcomePage />} />
-              <Route path="/sign_up" element={<SignUp />} />
               <Route path="/events_page" element={<EventsPage />} />
                 <Route path="/events_page/create_event" element={<CreateEvent />} />
                 <Route path="/events_page/current_events" element={<CurrentEvents />} />

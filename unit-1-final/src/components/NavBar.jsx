@@ -1,7 +1,5 @@
 import { Link } from 'react-router';
 
-//TODO make all Ps into links to associated page
-
 const NavBar = () => {
     return(
     <div className="NavBar">
