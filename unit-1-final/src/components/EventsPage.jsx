@@ -6,7 +6,7 @@ const EventsPage = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-
+    const rows = data.filter(row => row.length > 0);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -24,28 +24,44 @@ const EventsPage = () => {
     }, []);
     
     if(loading) {
-        return <p>Loading events...</p>
+        return <p className="EventsPage">Loading events...</p>
     }
 
     if (error) {
         alert(error.message);
     }
-
+    console.log("Data shape:", data);
     return(
         <div className="EventsPage">
             <h2>Events</h2>
             <button>
                 <Link to="/events_page/create_event">Create Event</Link>
             </button>
-            <div className="Data">
-            {data.map((row, index) => (
-                <div key={index}>
-                    {row.map((cell, cellIndex) => (
-                        <span key={cellIndex}>{cell} </span>
+            <table className="Data" border="1" cellPadding="8" style={{ borderCollapse: "collapse", width: "100%" }}>
+                <thead>
+                    <th>Event Name</th>
+                    <th>Organizer</th>
+                    <th>Location</th>
+                    <th>Date</th>
+                </thead>
+                <tbody>
+                    {rows.map((row, rowIndex) => (
+                        <tr key={rowIndex}>
+                            {row.map((cell, cellIndex) => {
+                                if (cellIndex === 0) {;
+                                    return (
+                                        <td key={cellIndex}>
+                                            <Link to={'/trip_page'}>{cell}</Link>
+                                        </td>
+                                    );
+                                } else {
+                                    return <td key={cellIndex}>{cell}</td>
+                                }
+                            })}
+                        </tr>
                     ))}
-                    </div>
-            ))}
-            </div>
+                </tbody>
+            </table>
         </div>
     );
 }
