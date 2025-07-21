@@ -17,7 +17,7 @@ header{
 h1{
     font-family: "Ranchers", sans-serif;
 }
-h2, p{
+h2, p, .Data{
     font-family: "Roboto", sans-serif;
 }
 footer{
