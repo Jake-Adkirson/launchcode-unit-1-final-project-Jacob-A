@@ -1,32 +1,45 @@
-import { useState } from "react";
+import React, { useState } from 'react';
+import { Navigate } from 'react-router';
 
 const CreateEvent = () => {
-    const [formData, setFormData] = useState({
-        eventName:"",
-        location:"",
-        date:"",
-    });
-    
-    const navigate = useNavigate();
+    const [eventName, setEventName] = useState('');
+    const [orgName, setOrgName] = useState('');
+    const [location, setLocation] = useState('');
+    const [date, setDate] = useState('');
 
-    const handleChange = (e) => {
-        const {name, value} = e.target;
-        setFormData((prevData) => ({
-            ...prevData,
-            [name]: value,
-        }));
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        fetch('https://hooks.zapier.com/hooks/catch/23886457/u2vppas/', {
+            method: "POST",
+            body: JSON.stringify({ eventName, orgName, location, date }),
+        }) .then(() => alert('Thank you for uploading your event!'));
     }
+
+    const handleNameChange = (e) => {
+    setEventName(e.target.value);
+}
+    const handleOrgChange = (e) => {
+    setOrgName(e.target.value);
+}
+    const handleLocationChange = (e) => {
+    setLocation(e.target.value);
+}
+    const handleDateChange = (e) => {
+    setDate(e.target.value);
+}
+
 
     return(
         <div className="MakeEvntFrm">
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>
-                    Event Name: <input type="text" name="eventName" value={formData.eventName} onChange={handleChange} />
-                    Location: <input type="text" name="location" value={formData.location} onChange={handleChange} />
-                    Date: <input type="text" name="date" value={formData.date} onChange={handleChange} />
+                    Event Name: <input type="text" name="eventName" value={eventName} onChange={handleNameChange} />
+                    Organizer: <input type='text' name='orgName' value={orgName} onChange={handleOrgChange} />
+                    Location: <input type="text" name="location" value={location} onChange={handleLocationChange}  />
+                    Date: <input type="text" name="date" value={date} onChange={handleDateChange} />
                 </label>
                 <br/>
-                <button>Submit</button>
+                <button type="submit">Submit</button>
                 <button>Clear</button>
             </form>
         </div>
