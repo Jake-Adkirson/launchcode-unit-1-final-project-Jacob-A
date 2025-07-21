@@ -8,7 +8,6 @@ import UserProfile from './components/UserProfile';
 import About from './components/About';
 import CreateEvent from './components/CreateEvent';
 import JoinEvent from './components/JoinEvent';
-import CurrentEvents from './components/CurrentEvents';
 import TripPage from './components/TripPage';
 import SignInSignUp from './components/SignInSignUp';
 
@@ -24,7 +23,6 @@ function App() {
               <Route path="/welcome" element={<WelcomePage />} />
               <Route path="/events_page" element={<EventsPage />} />
                 <Route path="/events_page/create_event" element={<CreateEvent />} />
-                <Route path="/events_page/current_events" element={<CurrentEvents />} />
               <Route path="/trip_page" element={<TripPage />} />
               <Route path="/join_event" element={<JoinEvent />} />
               <Route path="/profile" element={<UserProfile />} />

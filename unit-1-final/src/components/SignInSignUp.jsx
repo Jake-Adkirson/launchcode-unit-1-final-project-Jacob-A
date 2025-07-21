@@ -32,7 +32,7 @@ const SignInSignUp = () => {
             localStorage.setItem('age', age.current.value);
             localStorage.setItem('prefWatercraft', prefWatercraft.current.value);
             localStorage.setItem('state', state.current.value);
-            localStorage.setItem('signUp', password.current.value);
+            localStorage.setItem('signUp', email.current.value);
             alert('Account created successfully!');
         }
     }
