@@ -1,7 +1,5 @@
 import { Link } from 'react-router';
 
-//TODO change attendees to list and list items
-
 const TripPage = () => {
     return(
         <div className="TripPage">

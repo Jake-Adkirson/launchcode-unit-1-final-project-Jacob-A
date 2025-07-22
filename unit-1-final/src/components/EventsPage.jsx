@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router';
 import axios from 'axios';
 
@@ -34,9 +35,9 @@ const EventsPage = () => {
     return(
         <div className="EventsPage">
             <h2>Events</h2>
-            <button>
+            <motion.button animate={{ x: 0, scale: 1 }} initial={{ x: 100, scale: 0 }}>
                 <Link to="/events_page/create_event">Create Event</Link>
-            </button>
+            </motion.button>
             <table className="Data" border="1" cellPadding="8" style={{ borderCollapse: "collapse", width: "100%" }}>
                 <thead>
                     <tr>
