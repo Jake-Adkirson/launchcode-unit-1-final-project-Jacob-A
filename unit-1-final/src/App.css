@@ -23,6 +23,15 @@ h2, p, .Data{
 footer{
     border-top: 5px solid black;
 }
+a:link{
+    color: black;
+}
+a:visited{
+    color:brown;
+}
+a:hover{
+    color: blue;
+}
 .App{
     text-align: center;
     min-height: 100dvh;

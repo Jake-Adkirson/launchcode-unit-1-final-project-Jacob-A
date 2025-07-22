@@ -30,7 +30,7 @@ const EventsPage = () => {
     if (error) {
         alert(error.message);
     }
-    console.log("Data shape:", data);
+
     return(
         <div className="EventsPage">
             <h2>Events</h2>
@@ -39,10 +39,12 @@ const EventsPage = () => {
             </button>
             <table className="Data" border="1" cellPadding="8" style={{ borderCollapse: "collapse", width: "100%" }}>
                 <thead>
-                    <th>Event Name</th>
-                    <th>Organizer</th>
-                    <th>Location</th>
-                    <th>Date</th>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Organizer</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                    </tr>
                 </thead>
                 <tbody>
                     {rows.map((row, rowIndex) => (
@@ -51,7 +53,7 @@ const EventsPage = () => {
                                 if (cellIndex === 0) {;
                                     return (
                                         <td key={cellIndex}>
-                                            <Link to={'/trip_page'}>{cell}</Link>
+                                            <Link to={'/trip_page/'+ row[0]}>{cell}</Link>
                                         </td>
                                     );
                                 } else {
