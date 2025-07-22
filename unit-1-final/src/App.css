@@ -32,6 +32,11 @@ a:visited{
 a:hover{
     color: blue;
 }
+ul{
+    text-align: center;
+    display: inline-block;
+    text-align: left;
+}
 .App{
     text-align: center;
     min-height: 100dvh;

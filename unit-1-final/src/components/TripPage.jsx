@@ -11,6 +11,7 @@ const TripPage = () => {
             <button>
                 <Link to="/join_event">Join Event</Link>
             </button>
+            <br/>
             <ul>
                 <li>Name: Jake A. Age: 13+yrs Watercraft: Kayak Floating and/or Camping: Floating and Camping</li>
                 <li>Name: Brittany A. Age: 13+yrs Watercraft: Kayak Floating and/or Camping: Floating and Camping</li>
@@ -19,7 +20,9 @@ const TripPage = () => {
                 <li>Name: Roman H. Age: 0 - 7yrs Watercraft: Raft Floating and/or Camping: Floating and Camping</li>
                 <li>Name: Kaleb S. Age: 13+yrs Watercraft: Kayak Floating and/or Camping: Floating and Camping</li>
                 <li>Name: Carly A. Age: 13+yrs Watercraft: Raft Floating and/or Camping: Floating and Camping</li>
+            </ul>
                 <h2>Pricing</h2>
+            <ul>
                 <li>Name: Jake A. Camping: 35.98 Floating: 46 Total: 81.98</li>
                 <li>Name: Brittany A. Camping: 35.98 Floating: 46 Total: 81.98</li>
                 <li>Name: Jon H. Camping: 35.98 Floating: 55.2 Total: 91.18</li>
