@@ -5,7 +5,7 @@ const UserProfile = () => {
     const localState = localStorage.getItem('state');
     const localPrefWatercraft = localStorage.getItem('prefWatercraft');
 
-    return(
+    return( //pulls data from local storage to populate profile info
         <div className="Profile">
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541" />
         <p>Name: {localName}</p>

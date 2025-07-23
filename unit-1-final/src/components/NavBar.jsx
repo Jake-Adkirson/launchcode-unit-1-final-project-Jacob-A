@@ -3,7 +3,7 @@ import ReusableButton from './ReusableButton';
 import ReusableLink from './ReusableLink';
 
 const NavBar = () => {
-    return(
+    return( //utilizes reusable button and link
     <div className="NavBar">
         <ReusableButton style={{backgroundColor:"white"}}>
         <ReusableLink to={"/welcome"}>Home</ReusableLink>

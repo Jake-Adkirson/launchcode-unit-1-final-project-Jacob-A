@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import WelcomePage from './WelcomePage';
 
 const SignInSignUp = () => {
-    const name =  useRef();
+    const name =  useRef(); //uses useRef, useState and local storage to simulate account sign up and sign in
     const email = useRef();
     const password = useRef();
     const age = useRef();
@@ -49,7 +49,7 @@ const SignInSignUp = () => {
         }
     }
 
-    return(
+    return( //uses conditional formatting to redirect to welcome page once signed in and additional conditional formatting to display inputs for sign in or sign up
     <div>
         {showWelcome ? <WelcomePage /> :
         (show ?

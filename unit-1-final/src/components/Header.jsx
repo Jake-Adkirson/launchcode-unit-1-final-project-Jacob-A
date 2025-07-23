@@ -7,7 +7,7 @@ import SignInSignUp from './SignInSignUp';
 const Header = () => {
     const localSignIn = localStorage.getItem('signUp');
 
-    const logout = () => {
+    const logout = () => { //uses local storage to simulate logout and account deletion
         localStorage.removeItem("signUp");
         window.location.reload();
     }
@@ -16,7 +16,7 @@ const Header = () => {
         window.location.reload();
     }
     if (localSignIn === null){
-        return (
+        return ( //conditional formatting to either display sign in with delete account button disabled or sign out with delete button enabled
             <header>
                 <img src={logo} alt="Float With the Most Logo" style={{ height: '125px' }}/>
                 <br/>

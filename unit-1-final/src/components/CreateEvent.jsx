@@ -6,9 +6,9 @@ const CreateEvent = () => {
     const [location, setLocation] = useState('');
     const [date, setDate] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e) => {  //handles form submission and pushes data to google sheets that is located in my project folder
         e.preventDefault();
-        fetch('https://hooks.zapier.com/hooks/catch/23886457/u2vppas/', {
+        fetch('https://hooks.zapier.com/hooks/catch/23886457/u2vppas/', { 
             method: "POST",
             body: JSON.stringify({ eventName, orgName, location, date }),
         }) .then(() => window.location.reload(), alert('Thank you for uploading your event!'));

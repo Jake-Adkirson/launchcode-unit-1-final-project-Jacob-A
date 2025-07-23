@@ -9,7 +9,7 @@ const EventsPage = () => {
     const [error, setError] = useState(null);
     const rows = data.filter(row => row.length > 0);
 
-    useEffect(() => {
+    useEffect(() => { //uses google sheets API to load data from google sheet in project folder
         const fetchData = async () => {
             try {
                 const response = await axios.get(
@@ -48,13 +48,13 @@ const EventsPage = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {rows.map((row, rowIndex) => (
+                    {rows.map((row, rowIndex) => (  //maps through array pulled from google sheet to display in table and make column 1 links, will be important in Unit 2 project
                         <tr key={rowIndex}>
                             {row.map((cell, cellIndex) => {
                                 if (cellIndex === 0) {;
-                                    return (
+                                    return ( //Link to below redirects to /trip_page/ and adds event name from link clicked after last slash
                                         <td key={cellIndex}>
-                                            <Link to={'/trip_page/'+ row[0]}>{cell}</Link>
+                                            <Link to={'/trip_page/'+ row[0]}>{cell}</Link> 
                                         </td>
                                     );
                                 } else {
