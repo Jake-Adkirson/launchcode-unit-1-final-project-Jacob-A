@@ -12,7 +12,7 @@ const CreateEvent = () => {
         fetch('https://hooks.zapier.com/hooks/catch/23886457/u2vppas/', {
             method: "POST",
             body: JSON.stringify({ eventName, orgName, location, date }),
-        }) .then(() => alert('Thank you for uploading your event!'));
+        }) .then(() => window.location.reload(), alert('Thank you for uploading your event!'));
     }
 
     const handleNameChange = (e) => {

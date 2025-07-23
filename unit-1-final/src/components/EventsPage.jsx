@@ -38,7 +38,7 @@ const EventsPage = () => {
             <motion.button animate={{ x: 0, scale: 1 }} initial={{ x: 100, scale: 0 }}>
                 <Link to="/events_page/create_event">Create Event</Link>
             </motion.button>
-            <table className="Data" border="1" cellPadding="8" style={{ borderCollapse: "collapse", width: "100%" }}>
+            <table className="Data" border="1" cellPadding="8" style={{ borderCollapse: "collapse" }}>
                 <thead>
                     <tr>
                         <th>Event Name</th>

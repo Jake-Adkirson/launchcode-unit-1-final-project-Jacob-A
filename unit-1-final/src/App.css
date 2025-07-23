@@ -44,6 +44,10 @@ ul{
     grid-template-rows: auto 1fr auto;
     grid-template-columns: minmax(0, 1fr);
 }
+.Data{
+    margin-left: auto;
+    margin-right: auto;
+}
 .NavBar{
     display: flex;
     flex-direction: row;
@@ -56,8 +60,16 @@ ul{
 .Welcome, .About, .TripPage, .Profile, .CurrentEvents, .EventsPage, .MakeEvntFrm, .SignIn, .SignUp{
     background-color: gray;
     padding: 1em;
-    margin: 10em;
+    margin: auto;
     width: auto;
     height: fit-content;
     border: 2px solid black;
+}
+@media only screen and (max-width: 480px){
+    .Header {grid-area: 1 / span 6;}
+    .EventsPage {grid-area: 2 / span 1;}
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .Header {grid-area: 1 / span 6;}
+    .EventsPage {grid-area: 2 / span 1;}
 }
