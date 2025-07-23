@@ -34,6 +34,8 @@ const SignInSignUp = () => {
             localStorage.setItem('state', state.current.value);
             localStorage.setItem('signUp', email.current.value);
             alert('Account created successfully!');
+        } else {
+            alert('Please fill out all fields.');
         }
     }
 
