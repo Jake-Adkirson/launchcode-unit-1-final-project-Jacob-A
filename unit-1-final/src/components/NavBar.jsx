@@ -1,20 +1,21 @@
 import { Link } from 'react-router';
 import ReusableButton from './ReusableButton';
+import ReusableLink from './ReusableLink';
 
 const NavBar = () => {
     return(
     <div className="NavBar">
         <ReusableButton style={{backgroundColor:"white"}}>
-        <Link to="/welcome">Home</Link>
+        <ReusableLink to={"/welcome"}>Home</ReusableLink>
         </ReusableButton>
         <ReusableButton style={{backgroundColor:"white"}}>
-            <Link to="/events_page">Events</Link>
+            <ReusableLink to={"/events_page"}>Events</ReusableLink>
         </ReusableButton>
         <ReusableButton style={{backgroundColor:"white"}}>
-            <Link to="/profile">Profile</Link>
+            <ReusableLink to={"/profile"}>Profile</ReusableLink>
         </ReusableButton>
         <ReusableButton style={{backgroundColor:"white"}}>
-            <Link to="/about">About</Link>
+            <ReusableLink to={"/about"}>About</ReusableLink>
         </ReusableButton>
     </div>
     );
