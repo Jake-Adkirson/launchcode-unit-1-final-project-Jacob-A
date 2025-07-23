@@ -67,9 +67,25 @@ ul{
 }
 @media only screen and (max-width: 480px){
     .Header {grid-area: 1 / span 6;}
+    .Welcome {grid-area: 2 / span 1;}
     .EventsPage {grid-area: 2 / span 1;}
+    .About {grid-area: 2 / span 1;}
+    .TripPage {grid-area: 2 / span 1;}
+    .Profile {grid-area: 2 / span 1;}
+    .CurrentEvents {grid-area: 2 / span 1;}
+    .MakeEvntFrm {grid-area: 2 / span 1;}
+    .SignIn {grid-area: 2 / span 1;}
+    .SignUp {grid-area: 2 / span 1;}
 }
 @media only screen and (min-width: 600px) and (max-width: 768px){
     .Header {grid-area: 1 / span 6;}
+    .Welcome {grid-area: 2 / span 1;}
     .EventsPage {grid-area: 2 / span 1;}
+    .About {grid-area: 2 / span 1;}
+    .TripPage {grid-area: 2 / span 1;}
+    .Profile {grid-area: 2 / span 1;}
+    .CurrentEvents {grid-area: 2 / span 1;}
+    .MakeEvntFrm {grid-area: 2 / span 1;}
+    .SignIn {grid-area: 2 / span 1;}
+    .SignUp {grid-area: 2 / span 1;}
 }

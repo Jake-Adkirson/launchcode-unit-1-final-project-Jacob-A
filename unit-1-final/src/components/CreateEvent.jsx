@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Navigate } from 'react-router';
+import { useState } from 'react';
 
 const CreateEvent = () => {
     const [eventName, setEventName] = useState('');
