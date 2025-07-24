@@ -1,7 +1,6 @@
 import logo from '../assets/new-float-logo.png';
 import { Link } from 'react-router';
 import NavBar from './NavBar';
-import SignInSignUp from './SignInSignUp';
 
 
 const Header = () => {
