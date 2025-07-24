@@ -1,4 +1,3 @@
-
 const UserProfile = () => {
     const localName = localStorage.getItem('name');
     const localAge = localStorage.getItem('age');
