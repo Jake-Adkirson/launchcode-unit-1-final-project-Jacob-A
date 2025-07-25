@@ -57,13 +57,18 @@ ul{
     padding: 1em;
     font-family: "Roboto", sans-serif;
 }
-.Welcome, .About, .TripPage, .Profile, .CurrentEvents, .EventsPage, .MakeEvntFrm, .SignIn, .SignUp{
+.Welcome, .About, .TripPage, .Profile, .CurrentEvents, .EventsPage, .MakeEvntFrm, .SignIn, .SignUp, .SignUpHeader{
     background-color: gray;
     padding: 1em;
     margin: auto;
     width: auto;
     height: fit-content;
     border: 2px solid black;
+}
+.SignUp{
+    display: inline-block;
+    clear: left;
+    text-align: right;
 }
 @media only screen and (max-width: 480px){
     .Header {grid-area: 1 / span 6;}

@@ -63,8 +63,9 @@ const SignInSignUp = () => {
             </form>
         </div>
         : 
+    <div className="SignUpHeader">
+        <h2>Sign Up</h2>
         <div className="SignUp">
-            <h2>Sign Up</h2>
             <form>
                 Name: <input required type="text" name="name" ref={name} placeholder="Enter name..." />
                 <br/>
@@ -81,6 +82,7 @@ const SignInSignUp = () => {
                 <button onClick={handleClick}>Sign Up</button>
             </form>
         </div>
+    </div>
         )} 
     </div>
     );
