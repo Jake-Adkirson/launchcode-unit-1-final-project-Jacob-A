@@ -67,10 +67,15 @@ const SignInSignUp = () => {
             <h2>Sign Up</h2>
             <form>
                 Name: <input required type="text" name="name" ref={name} placeholder="Enter name..." />
+                <br/>
                 Age: <input required type="text" name="age" ref={age} placeholder="Enter age..." />
+                <br/>
                 Preferred Watercraft: <input required type="text" name="prefWatercraft" ref={prefWatercraft} placeholder="Enter watercraft..." />
+                <br/>
                 State: <input required type="text" name="state" ref={state} placeholder="Enter state..." />
+                <br/>
                 Email: <input required type="email" name="email" ref={email} placeholder="Enter email..." />
+                <br/>
                 Password: <input required type="password" name="password" ref={password} placeholder="Enter password..." />
                 <br/>
                 <button onClick={handleClick}>Sign Up</button>

@@ -57,7 +57,7 @@ ul{
     padding: 1em;
     font-family: "Roboto", sans-serif;
 }
-.Welcome, .About, .TripPage, .Profile, .CurrentEvents, .EventsPage, .MakeEvntFrm, .SignInSignUp{
+.Welcome, .About, .TripPage, .Profile, .CurrentEvents, .EventsPage, .MakeEvntFrm, .SignIn, .SignUp{
     background-color: gray;
     padding: 1em;
     margin: auto;
@@ -74,7 +74,8 @@ ul{
     .Profile {grid-area: 2 / span 1;}
     .CurrentEvents {grid-area: 2 / span 1;}
     .MakeEvntFrm {grid-area: 2 / span 1;}
-    .SignInSignUp {grid-area: 2 / span 1;}
+    .SignIn {grid-area: 2 / span 1;}
+    .SignUp {grid-area: 2 / span 1;}
 }
 @media only screen and (min-width: 600px) and (max-width: 768px){
     .Header {grid-area: 1 / span 6;}
