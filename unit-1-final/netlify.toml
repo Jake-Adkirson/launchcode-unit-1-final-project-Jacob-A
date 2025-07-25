@@ -1,6 +1,0 @@
-[[redirects]]
-from ="/*"
-to = "/index.html"
-status = 200
-
-/api/*  https://sheets.googleapis.com/v4/spreadsheets/1XGZyeeLtsE3gUdgYZOBrXmymrHSWkzP9dFEiNwv5dBo/values/Sheet1!A2:D500?key=AIzaSyATPhbEPCa76G2XT63QCG0mpk4Q_BYYimI:splat  200
